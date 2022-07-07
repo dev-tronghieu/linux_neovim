@@ -16,7 +16,6 @@ return require'packer'.startup(function()
   -- LSP
   use 'neovim/nvim-lspconfig'
   use 'williamboman/nvim-lsp-installer'
-  use 'onsails/lspkind.nvim'
 
   -- cmp plugins
   use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
@@ -24,6 +23,7 @@ return require'packer'.startup(function()
   use 'hrsh7th/cmp-path' -- Path completions
   use 'hrsh7th/cmp-cmdline' -- cmdline completions
   use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
+  use 'hrsh7th/cmp-nvim-lua'
   use 'saadparwaiz1/cmp_luasnip' -- Snippets completions
 
   -- Snippets
@@ -33,6 +33,4 @@ return require'packer'.startup(function()
   -- Treesitter
   use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
   use 'nvim-treesitter/nvim-treesitter-refactor'
-  use 'JoosepAlviste/nvim-ts-context-commentstring'
-  use 'tpope/vim-commentary'
 end)
