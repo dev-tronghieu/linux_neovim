@@ -16,6 +16,7 @@ return require'packer'.startup(function()
   -- LSP
   use 'neovim/nvim-lspconfig'
   use 'williamboman/nvim-lsp-installer'
+  use 'jose-elias-alvarez/null-ls.nvim'
 
   -- cmp plugins
   use 'hrsh7th/nvim-cmp' -- Autocompletion plugin

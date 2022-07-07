@@ -15,6 +15,7 @@ require('shade-config') -- Shade
 require('lsp-config.nvim-cmp')
 require('lsp-config.configs')
 require('lsp-config.handlers').setup()
+require('lsp-config.null-ls')
 
 -- Treesitter
 require('treesitter-config')
